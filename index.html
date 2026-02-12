@@ -148,6 +148,51 @@ footer {
     text-align: center;
     font-size: 14px;
 }
+/* ===== RESPONSIVE FIX ===== */
+
+@media (max-width: 1100px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 0 20px;
+    }
+
+    section {
+        padding: 40px 25px;
+    }
+
+    .grid-3,
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    .card {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
 </style>
 </head>
 
@@ -320,3 +365,4 @@ footer {
 
 </body>
 </html>
+
